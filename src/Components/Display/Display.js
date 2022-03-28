@@ -36,9 +36,14 @@ function Display() {
     setIsActive(true);
     console.log("handleStart");
   };
+  
+  const handlePause = () => {
+    setIsActive(false);
+    console.log("handlePause");
+  };
 
   const handleSkip = () => {
-    setIsActive(false)
+    setIsActive(false);
     console.log("handleSkip");
   };
 
@@ -46,7 +51,7 @@ function Display() {
     <div>
       <Intervals />
       <Timer minutes={formatMinutes} seconds={formatSeconds} />
-      <StartBtn handleStart={handleStart} />
+      <StartBtn display={isActive} handleStart={handleStart} handlePause={handlePause} />
       <SkipBtn handleSkip={handleSkip} />
     </div>
   );
