@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 
 import Header from "../Header/Header";
 import Display from "../Display/Display";
@@ -17,5 +17,5 @@ function App() {
 export default App;
 
 //TODO:
-// Import Header, Display, TaskList
-// Render Header, Display, TaskList
+// Import Header, Display, TaskList ✅
+// Render Header, Display, TaskList ✅

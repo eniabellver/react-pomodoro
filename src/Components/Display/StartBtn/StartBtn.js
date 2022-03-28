@@ -5,9 +5,9 @@ import React from 'react'
 // Use prop to define state of button
 // Conditional render the text of button
 
-function StartBtn() {
+function StartBtn({handleStart}) {
   return (
-    <button>Start</button>
+    <button onClick={handleStart}>Start</button>
   )
 }
 

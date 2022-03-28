@@ -1,10 +1,17 @@
 import { render, screen } from "@testing-library/react";
-import App from './App'
+import App from "./App";
 
-test('renders a header with a heading and settings button', () => {
+describe("App component tests", () => {
+  test("renders a header", () => {
     render(<App />);
-    const heading = screen.getByText('React Pomodoro');
-    const settingsButton = screen.getByText('Settings');
+    const heading = screen.getByText("React Pomodoro");
     expect(heading).toBeInTheDocument();
-    expect(settingsButton).toBeInTheDocument();
-})
+  });
+  test("renders buttons", () => {
+    render(<App />);
+    const settings = screen.getByText("Settings");
+    const addTask = screen.getByText("Add task");
+    expect(settings).toBeInTheDocument()
+    expect(addTask).toBeInTheDocument()
+  });
+});

@@ -1,8 +1,8 @@
 import React from 'react'
 
-function SkipBtn() {
+function SkipBtn({handleSkip}) {
   return (
-    <button>Skip</button>
+    <button onClick={handleSkip}>Skip</button>
   )
 }
 

@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-//TODO:
-// Use time state prop to render the current timer
-
-function Timer() {
+function Timer({minutes, seconds}) {
   return (
     <div>
-      <h2>00:00</h2>
+      <h1>
+      {minutes}:{seconds}
+      </h1>
+      
     </div>
-  )
+  );
 }
 
-export default Timer
+export default Timer;
